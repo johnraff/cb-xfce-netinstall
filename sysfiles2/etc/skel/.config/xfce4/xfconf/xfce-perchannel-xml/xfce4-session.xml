@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-session" version="1.0">
+  <property name="splash" type="empty">
+    <property name="Engine" type="string" value=""/>
+    <property name="engines" type="empty">
+      <property name="simple" type="empty">
+        <property name="Font" type="empty"/>
+        <property name="BgColor" type="empty"/>
+        <property name="FgColor" type="empty"/>
+        <property name="Image" type="empty"/>
+      </property>
+    </property>
+  </property>
+  <property name="general" type="empty">
+    <property name="FailsafeSessionName" type="empty"/>
+    <property name="SessionName" type="string" value="Default"/>
+    <property name="SaveOnExit" type="bool" value="false"/>
+  </property>
+  <property name="sessions" type="empty">
+    <property name="Failsafe" type="empty">
+      <property name="IsFailsafe" type="bool" value="true"/>
+      <property name="Count" type="int" value="5"/>
+      <property name="Client0_Command" type="array">
+        <value type="string" value="openbox"/>
+        <value type="string" value="--config-file"/>
+        <value type="string" value="~/.config/openbox/rc-xfce.xml"/>
+      </property>
+      <property name="Client0_PerScreen" type="bool" value="false"/>
+      <property name="Client1_Command" type="array">
+        <value type="string" value="xfce4-panel"/>
+      </property>
+      <property name="Client1_PerScreen" type="bool" value="false"/>
+      <property name="Client2_Command" type="array">
+        <value type="string" value="Thunar"/>
+        <value type="string" value="--daemon"/>
+      </property>
+      <property name="Client2_PerScreen" type="bool" value="false"/>
+      <property name="Client3_Command" type="array">
+        <value type="string" value="xfdesktop"/>
+      </property>
+      <property name="Client3_PerScreen" type="bool" value="false"/>
+      <property name="Client4_Command" type="array">
+        <value type="string" value="xfce4-settings-helper"/>
+      </property>
+      <property name="Client4_PerScreen" type="bool" value="false"/>
+    </property>
+  </property>
+  <property name="compat" type="empty">
+    <property name="LaunchGNOME" type="bool" value="false"/>
+  </property>
+</channel>

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Catfish
+Comment=File search
+Categories=GTK;Utility;Filesystem;
+Exec=catfish
+Icon=catfish
+Terminal=false
+StartupNotify=true
+X-XFCE-Source=file:///usr/share/applications/catfish.desktop

@@ -1,0 +1,14 @@
+Welcome to #!-XFCE!
+
+This is an unofficial CrunchBang respin - a standard Waldorf system with an XFCE desktop environment on top, and a few extra applications installed. Openbox is substituted for the XFCE window manager so the usual Crunchbang menu and pipe-menus are available, as are the standard keyboard shortcuts.
+
+NOTES FOR USERS
+*) The Crunchbang menu can be called by the "Menu" key, if you have one, "Super"+"Space", or from the panel at the top of the screen. It is also in the XFCE menu, under "other". Some entries (such as "Exit", which calls the XFCE Logout dialogue) have been modified, and some (such as "User Interface", which calls lxappearance) have been removed because they might clash with the XFCE settings interface.
+*) All other usual CrunchBang features - pipe menus, welcome script etc - are available in the XFCE session.
+*) All the settings in the XFCE interface can also be used, except the "Window manager settings" and "Window manager tweaks" because the XFCE window manager has been replaced by Openbox.
+*) Compositing is handled by Compton, as in Crunchbang.
+*) Openbox is configured by rc-xfce.xml and menu-xfce.xml when used with XFCE. The Crunchbang-XFCE menu "edit" entries have been modified to point to those files.
+*) Autostart is also handled separately. autostart-xfce can be used for settings and tweaking the environment, but for starting up applications you want to run during the XFCE session it is better to use the XFCE "Sessions and startup" dialogue. This creates .desktop files in ~/.config/autostart which will also be started by Openbox in a normal CrunchBang session. To prevent that, add a line 'OnlyShowIn=XFCE;' to the files.
+*) The GUI config editor Obconf works for editing rc-xfce.xml, but Obmenu will only edit the default menu.xml, so has been omitted from the #!-XFCE menu.
+*) Keyboard shortcuts can be set in rc-xfce.xml or via the XFCE settings interface. If you use the same key combo in both places the behaviour is unpredictable. Sometimes Openbox wins, sometimes XFCE, so try to avoid that situation.
+*) The standard CrunchBang environment is also available at the Slim login - use F1 to select "startxfce4" or "openbox-session". The XFCE session has its own separate config files for Openbox, so settings can be made independently. The CrunchBang session started by "openbox-session" is identical with the usual #! install, EXCEPT for 1) the default wallpaper choice is different, as a reminder this isn't 100% vanilla #!, 2) there is a "Desktop" folder - just ignore it - and 3) some extra apps are installed by default which a typical CrunchBang user might not want, such as update-notifier and software-center. Uninstall them if they are not needed.

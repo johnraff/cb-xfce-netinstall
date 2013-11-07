@@ -1,0 +1,12 @@
+show_frame=false
+fg_set=true
+bg_set=false
+timezone=
+width_set=false
+height_set=false
+data0=%R
+font0=
+tooltip=%x %A
+hib_timing=false
+fg=65535R 65535G 65535B
+

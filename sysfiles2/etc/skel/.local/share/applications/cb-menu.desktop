@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=xdotool key super+space
+Name=Crunchbang Menu
+Name[ja]=クランチバング.メニュー
+Icon=/usr/share/pixmaps/waldorf.png

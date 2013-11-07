@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=0.9.4
+Type=Application
+Name=Conky
+Name[ja]=コンキー
+Comment=Launch the standard CrunchBang conky.
+Comment[ja]=スタンダードなクランチバングのコンキーを
+Exec=conky-default
+StartupNotify=false
+Terminal=false
+Hidden=true
+OnlyShowIn=XFCE;
+

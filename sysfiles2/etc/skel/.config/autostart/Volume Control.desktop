@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.9.4
+Type=Application
+Name=Volume Control
+Name[ja]=音量調節
+Comment=
+Exec=pnmixer
+StartupNotify=false
+Terminal=false
+Hidden=false
+OnlyShowIn=XFCE;

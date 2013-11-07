@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.9.4
+Type=Application
+Name=Autostart-xfce
+Comment=Script to setup environment for CrunchBang XFCE/Openbox session.
+Comment[ja]=クランチバング−XFCE−Openboxセションのため細かい設定する。
+Exec=autostart-xfce
+StartupNotify=false
+Terminal=false
+Hidden=false
+OnlyShowIn=XFCE;

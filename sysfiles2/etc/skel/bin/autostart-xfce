@@ -1,0 +1,56 @@
+#!/bin/sh
+## autostart-xfce
+## ====================
+## When you login to your CrunchBang Xfce+Openbox session,
+## this autostart script will be executed by xfce (not openbox) 
+## to set-up part of your environment.
+## NOTE run by sh not bash, so avoid bashisms,
+## or change the #!/bin/sh to #!/bin/bash . 
+##
+## Although you can autostart applications here,
+## it is recommended to use the Xfce interface,
+## which will add desktop files to ~/.config/autostart .
+## NB Such desktop files will also be executed
+## by a normal openbox session. To avoid this,
+## make sure they contain the line:
+## OnlyShowIn=XFCE;
+##
+## Note*: some programs, such as 'nm-applet' are run via XDG autostart.
+## Run '/usr/lib/openbox/openbox-xdg-autostart --list' to list any
+## XDG autostarted programs.
+##
+
+## GNOME PolicyKit and Keyring
+eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+
+## Detect and configure touchpad. See 'man synclient' for more info.
+if egrep -iq 'touchpad' /proc/bus/input/devices; then
+    synclient VertEdgeScroll=1 &
+    synclient TapButton1=1 &
+fi
+
+## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
+## Adjust the values according to your preferances.
+xset r rate 250 25 &
+
+## Turn on/off system beep
+xset b off &
+
+## Key remapping:
+## example code to turn RightAlt into Home,
+## and RightCtrl into End.
+#(xmodmap -e "keysym Alt_R = Home"
+#xmodmap -e "remove Mod1 = Home"
+#xmodmap -e "keysym Control_R = End"
+#xmodmap -e "remove Control = End") &
+
+## Open the README file on the desktop, if it hasn't been read before.
+## It is safe to comment out or remove this line.
+(sleep 12; [ -f ~/Desktop/_README_ ] && { mousepad ~/Desktop/_README_; mv ~/Desktop/_README_ ~/Desktop/README; } ) &
+
+## cb-welcome - post-installation script, will not run in a live session and
+## only runs once. Safe to remove.
+(sleep 10s && cb-welcome --firstrun) &
+
+## cb-fortune - have Waldorf say a little adage
+(sleep 120s && cb-fortune) &

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Keyboard
+Name[ja]=キーボード
+Comment=Edit keyboard settings and application shortcuts
+Comment[ja]=キーボード設定とアプリケーションショートカットキーを編集します
+Exec=xfce4-keyboard-settings
+Icon=preferences-desktop-keyboard
+Terminal=false
+Type=Application
+Categories=X-XFCE;Settings;DesktopSettings;X-XfceSettingsDialog;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpFile=xfce4-settings.html
+X-XFCE-Source=file:///usr/share/applications/xfce-keyboard-settings.desktop

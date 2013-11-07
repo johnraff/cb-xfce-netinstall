@@ -1,0 +1,5 @@
+#!/bin/sh
+# start conky after a delay
+
+sleep 5
+exec conky -q

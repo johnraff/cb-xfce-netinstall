@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Icedove Mail/News
+Comment=Read/Write Mail/News with Icedove
+GenericName=Mail Client
+Exec=icedove %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=icedove
+Categories=Network;Email;News;GTK;
+MimeType=message/rfc822;x-scheme-handler/mailto;
+StartupWMClass=Icedove-bin
+StartupNotify=true
+Name[ja]=Icedove メールクライアント
+Comment[ja]=メールの読み書き
+GenericName[ja]=メールクライアント
+X-XFCE-Source=file:///usr/share/applications/icedove.desktop

@@ -1,0 +1,41 @@
+# tweak if necessary to match your display
+alignment top_right
+gap_x 65
+gap_y 0
+minimum_size 100 10
+maximum_width 190
+
+use_xft yes
+xftfont Bitstream Vera Sans Mono:size=9
+xftalpha 1.0
+
+background yes
+update_interval 0.5
+total_run_times 0
+
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_argb_visual yes
+own_window_hints undecorated,above,sticky,skip_taskbar,skip_pager
+
+double_buffer yes
+
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+default_color white
+default_shade_color black
+
+uppercase no
+
+cpu_avg_samples 2
+net_avg_samples 2
+if_up_strictness address
+
+override_utf8_locale no
+
+TEXT
+${if_up wlan0}Dn: ${color #71bf9f}${downspeedgraph wlan0 12,65 -l} ${alignr}${color}Up: ${color #bf9f71}${upspeedgraph wlan0 12,65 -l}${endif}${if_up eth0}Dn: ${color #71bf9f}${downspeedgraph eth0 12,65 -l} ${alignr}${color}Up: ${color #bf9f71}${upspeedgraph eth0 12,65 -l}${endif}

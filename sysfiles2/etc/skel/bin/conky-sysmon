@@ -1,0 +1,5 @@
+#!/bin/sh
+# start conky after a delay, using a custom config file
+
+sleep 8
+exec conky -q -c $HOME/.config/user/conky-sysmonrc

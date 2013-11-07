@@ -1,0 +1,20 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Iceweasel
+Name[ja]=Iceweasel
+Comment=Browse the World Wide Web
+Comment[ja]=ウェブを閲覧します
+GenericName=Web Browser
+GenericName[ja]=ウェブ・ブラウザ
+X-GNOME-FullName=Iceweasel Web Browser
+X-GNOME-FullName[ja]=Iceweasel ウェブ・ブラウザ
+Exec=iceweasel %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=iceweasel
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Iceweasel
+StartupNotify=true
+X-XFCE-Source=file:///usr/share/applications/iceweasel.desktop
