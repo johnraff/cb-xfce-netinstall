@@ -1,0 +1,5 @@
+#!/bin/sh
+# start crunchbang compositor after a delay
+
+sleep 6
+exec cb-compositor --start
